@@ -1,0 +1,74 @@
+body{
+    /* make all text courier, set margin and padding to 10px */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+
+  }
+
+  h1{
+    /* make your headers 32px, #128ded color and bold */
+    font-family: 'Berlin Sans FB';
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+  }
+
+  h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding-bottom: 24px;
+    padding-left: 10px
+  }
+
+  h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding-bottom: 24px;
+    padding-left: 10px
+  }
+
+  p{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  .fa-solid {
+    font-size: 50px;
+    color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  a:hover{
+    color: green;
+  }
+
+  a:link, a:visited {
+    color: black;
+  }
+
+  .active a{
+    color: green;
+    text-decoration:solid;
+  }
+
+/* copied below image grid code from w3 schools: https://www.w3schools.com/howto/howto_js_image_grid.asp */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
