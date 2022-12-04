@@ -23,19 +23,19 @@ var img_caption = document.getElementsByTagName("figcaption")[0].innerHTML;
 // Array.from(images).forEach(function(image) {
 // });
 
-var elements = document.getElementsByTagName("figure");
+var elements = document.getElementsByTagName("figure"); //christine modified from reference
 
 
 for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', myFunction);
 }
 function myFunction() {
-    img_src = this.getElementsByClassName("img_mod")[0].src;
-    img_caption = this.getElementsByTagName("figcaption")[0].innerHTML;
+    img_src = this.getElementsByClassName("img_mod")[0].src;  //christine modified from reference
+    img_caption = this.getElementsByTagName("figcaption")[0].innerHTML; //christine modified from reference
     modal.style.display = "block";
-    modalImg.src = img_src;
-    captionText.innerHTML = img_caption;
-    console.log(img_src)
+    modalImg.src = img_src; //christine modified from reference
+    captionText.innerHTML = img_caption; //christine modified from reference
+    console.log(img_caption)
 };
 
     // Get the <span> element that closes the modal

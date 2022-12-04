@@ -9,7 +9,17 @@
 		<link rel="icon" href="images/icons/favicon.png">
 		<link rel="stylesheet" href="css/html5reset.css">
 		<link rel="stylesheet" href="css/style.css">
-		<title>EV Home</title>
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
+		<title>Ready EV - Charging</title>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXRPQPYJF9"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-QXRPQPYJF9');
+		// <!-- Google tag (gtag.js) -->
+		</script>
 	</head>
 
 	<body>
@@ -22,34 +32,47 @@
 					<a class="button button6px button_active" href="charging.html">How do I charge it?</a>
 					<a class="button button6px" href="range.html">How far can I drive?</a>
 					<a class="button button6px" href="maintenance.html">Wait, no oil changes?</a>
+					<a class="button button6px" href="ctctme.html">Contact Me</a>
 				</div>
 			</nav>
 		</header>
 
 		<main>
-			<i class="fa-solid fa-charging-station"></i>
-			<h1>How do I charge it?</h1>
-			<h2>Can you imagine being able to fuel your vehicle inside your garage?</h2> 
-			<p>You can do exactly that with an electric vehicle!
-				You can provide up to two levels (or speeds) for charging your vehicle in your house. The next level up, level 3 or DC Fast Charging,
-				is currently only available in public facilities. Those are better for road trips when you want to fill up quickly. 
-			</p>
-			<p>
-				There is not an extensive amount of equipement to buy either! All electric vehicles can plug into a normal 110V plug that you have
-				in your house right now! However, this is the most inefficient as it could take as much as 2-3 days to charge a vehicle fully from 0-100% because
-				it only adds 2-5 miles of range per hour of charge. However, if your daily commute to work or various errands is 2-5 miles then this option would
-				perfectly suit you if you charge every day. Another option is to install a 220V plug into your garage, which would charge your vehicle 5-6x faster
-				making this a great choice for most homeowners. This gives you 10-30 miles of range per hour of charging and can charge an empty vehicle in about 7-9 hours
-				(overnight)!
-			</p>
-			<figure>
-				<a href="images/pages/New_Types_of_Charging.png">
-					<img id="img-med" src="images/pages/New_Types_of_Charging.png" alt="Lists 3 types of EV charging ranging from slowest (Level 1) to fastest (Level 3).">
-				</a>
-			</figure>
-			<br>
-			<h3>Image Source: <a href="https://www.phoenix.gov/sustainabilitysite/Pages/Basics-of-Charging.aspx">City of Phoenix: Basics of Charging</a></h3>
+			<div class="gallery_container">
+				<i class="fa-solid fa-charging-station"></i>
+				<h1>How do I charge it?</h1>
+				<h2>Can you imagine being able to fuel your vehicle inside your garage?</h2> 
+				<p>You can do exactly that with an electric vehicle!
+					You can provide up to two levels (or speeds) for charging your vehicle in your house. The next level up, level 3 or DC Fast Charging,
+					is currently only available in public facilities. Those are better for road trips when you want to fill up quickly. 
+				</p>
+				<p>
+					There is not an extensive amount of equipment to buy either! All electric vehicles can plug into a normal 110V plug that you have
+					in your house right now! However, this is the most inefficient as it could take as much as 2-3 days to charge a vehicle fully from 0-100% because
+					it only adds 2-5 miles of range per hour of charge. However, if your daily commute to work or various errands is 2-5 miles then this option would
+					perfectly suit you if you charge every day. Another option is to install a 220V plug into your garage, which would charge your vehicle 5-6x faster
+					making this a great choice for most homeowners. This gives you 10-30 miles of range per hour of charging and can charge an empty vehicle in about 7-9 hours
+					(overnight)!
+				</p>
+			</div>
+			<div class="single_img_container">
+				<figure>
+					<img class="img-med img_mod radius" src="images/garage_charging.jpg" alt="Lists 3 types of EV charging ranging from slowest (Level 1) to fastest (Level 3).">
+					<figcaption>Image Source: <a href="https://cleantechnica.com/2019/04/14/getting-your-home-ev-charging-set-up-ev-charging-101/">EV Charging 101: Getting Your Home EV Charging Set Up</a></figcaption>
+				</figure>
+				<figure>
+					<img class="img-med img_mod radius" src="images/pages/New_Types_of_Charging.png" alt="Lists 3 types of EV charging ranging from slowest (Level 1) to fastest (Level 3).">
+					<figcaption>Image Source: <a href="https://www.phoenix.gov/sustainabilitysite/Pages/Basics-of-Charging.aspx">City of Phoenix: Basics of Charging</a></figcaption>
+				</figure>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01" alt="empty image for placeholder">
+				<div id="caption"></div>
+  			</div>
 		</main>
+		<script src="js/vehicle_modals.js"></script>
 
 		<footer>
 		</footer>

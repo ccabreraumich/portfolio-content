@@ -9,7 +9,17 @@
 		<link rel="icon" href="images/icons/favicon.png">
 		<link rel="stylesheet" href="css/html5reset.css">
 		<link rel="stylesheet" href="css/style.css">
-		<title>EV Home</title>
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
+		<title>Ready EV - Range</title>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXRPQPYJF9"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-QXRPQPYJF9');
+		// <!-- Google tag (gtag.js) -->
+		</script>
 	</head>
 
 	<body>
@@ -22,34 +32,53 @@
 					<a class="button button6px" href="charging.html">How do I charge it?</a>
 					<a class="button button6px button_active" href="range.html">How far can I drive?</a>
 					<a class="button button6px" href="maintenance.html">Wait, no oil changes?</a>
+					<a class="button button6px" href="ctctme.html">Contact Me</a>
 				</div>
 			</nav>
 		</header>
 		<main>
-			<i class="fa-solid fa-route"></i>
-			<h1>What if I want to take a trip?</h1>
-			<h2>The amount of charging stations has increased enormously over the past 10 years.</h2>
-			<p>Below is a map from the Department of Energy showing how prevalant charging stations have become throught the United States. You are sure to find a charging station within reach on your
-				next road trip!
-			</p>	
-			<p>In the future, there will be charging stations at every location where we traditionally have gasoline-based fuel. While we are not there yet,
-				we are moving in that directly very quickly. There are smartphone apps available to help you plan yoru next trip and locate charging stations
-				along your route. 
-			</p>
-			<figure>
-				<a href="images/pages/charging_stations_us_energy_gov.jpg">
-					<img id="img-med" src="images/pages/charging_stations_us_energy_gov.jpg" alt="US Map showing thousands of markers, representing charging stations." width="500">
-				</a>
-			</figure>
-			<h3>Image Source: <a href="https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC">Alternative Fuels Data Center</a></h3>
-			<figure>
-				<a href="images/pages/DC-fast-charging-site-design.png">
-					<img id="img-med2" src="images/pages/DC-fast-charging-site-design.png" alt="Electric charging stations alongside gas pumps at a fueling station." width="500">
-				</a>
-			</figure>
-			<h3>Image Source: <a href="https://www.chargepoint.com/blog/7-considerations-successful-ev-charging-site-design-fuel-and-convenience-retail-locations">Chargepoint Retail Location</a></h3>
+				<div class="gallery_container">
+					<i class="fa-solid fa-route"></i>
+					<h1>How far can I drive?</h1>
+					<h2>The amount of charging stations has increased enormously over the past 10 years.</h2>
+					<p>Below is a map from the Department of Energy showing how prevalant charging stations have become throught the United States. You are sure to find a charging station within reach on your
+						next road trip!
+					</p>
+					<p>In the future, there will be charging stations at every location where we traditionally have gasoline-based fuel. While we are not there yet,
+						we are moving in that directly very quickly.
+					</p>
+					<p>
+						There are smartphone apps available, such as Plugshare, to help you plan your next trip and locate charging stations along your route.
+					</p>
+					<figure>
+						<a href="https://play.google.com/store/apps/details?id=com.xatori.Plugshare&hl=en_US&gl=US">
+							<img class="noBorder radius img-sm" src ="images/plugshare-app.jpg" alt="plugshare app logo">
+						</a>
+					</figure>
+				</div>
+				<div class="single_img_container">
+					<figure>
+						<!-- <a href="images/pages/charging_stations_us_energy_gov.jpg"> -->
+							<img class="img-med img_mod" src="images/pages/charging_stations_us_energy_gov.jpg" alt="US Map showing thousands of markers, representing charging stations.">
+						<!-- </a> -->
+						<figcaption>Image Source: <a href="https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC">Alternative Fuels Data Center</a></figcaption>
+					</figure>
+					<figure>
+						<!-- <a href="images/pages/DC-fast-charging-site-design.png"> -->
+							<img class="img-med img_mod" src="images/pages/DC-fast-charging-site-design.png" alt="Electric charging stations alongside gas pumps at a fueling station.">
+						<!-- </a> -->
+						<figcaption>Image Source: <a href="https://www.chargepoint.com/blog/7-considerations-successful-ev-charging-site-design-fuel-and-convenience-retail-locations">Chargepoint Retail Location</a></figcaption>
+					</figure>
+				</div>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01" alt="empty image for placeholder">
+				<div id="caption"></div>
+  			</div>
 		</main>
-
+		<script src="js/vehicle_modals.js"></script>
 		<footer>
 		</footer>
 	</body>

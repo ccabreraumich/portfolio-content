@@ -25,8 +25,12 @@
             /* width: 75%; Full width */
             height: 75%;  /* Full height */
             /* overflow: auto;  Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            /* background-image: url('../images/electric-vehicle-ev-flipped_light2.jpg'); */
+            background-color: rgba(0,0,0,0); /* Black w/ opacity /*
+            max-width: 90vw;
+            /* max-height:500px; */
+            width: auto;
+            height: auto;
           }
             
           /* Modal Content (image) */
@@ -34,8 +38,11 @@
             margin: auto;
             display: block;
             align-self: center;
-            width: 80%;
-            height: 80%;
+            max-width: 80vw;
+            max-height:800px;
+            min-height: 600px;
+            width: auto;
+            height: auto;
             /* padding: 50px; */
             /* max-width: 300px; */
           }
@@ -49,18 +56,17 @@
             text-align: center;
             color: #ccc;
             padding-bottom: 50px;
-            height: 150px;
           }
 
-          /* Add Animation */
+          /* Add Animation
           .modal-content, #caption {  
             -webkit-animation-name: zoom;
             -webkit-animation-duration: 0.6s;
             animation-name: zoom;
             animation-duration: 0.6s;
-          }
+          } */
 
-          @-webkit-keyframes zoom {
+          /* @-webkit-keyframes zoom {
             from {-webkit-transform:scale(0)} 
             to {-webkit-transform:scale(1)}
           }
@@ -68,7 +74,7 @@
           @keyframes zoom {
             from {transform:scale(0)} 
             to {transform:scale(1)}
-          }
+          } */
 
           /* The Close Button */
           .close {
@@ -140,16 +146,37 @@
   .gallery_container {
     min-width: 80vw;
     display: inline-flex;
-    padding-left: 35px;
+    margin: 35px;
     flex-direction: column;
     justify-content: space-between;
     align-items:flex-start;
   }
+
+  .single_img_container {
+    min-width: 80vw;
+    display: inline-flex;
+    padding: 0px 35px 0 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items:flex-start;
+  }
   
+  .flex_header {
+    display: inline-block;
+  }
+
+  .flex_image {
+    /* width: 100%; */
+    flex-basis: 300px;
+    flex-grow: 1;
+    text-align: center;
+  }
+
 
   .grid_footer {
-    grid-row: 8;
-    grid-column: 1 / span 3;
+    grid-row: 6;
+    grid-column: 2 / -1;
   }
 
 
@@ -157,7 +184,7 @@
     /* font-family: 'Berlin Sans FB'; */
     font-size: 32px;
     font-weight:800;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 10px;
     padding-left: 10px;
 
@@ -193,6 +220,7 @@
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-size: 18px;
     padding-left: 10px;
+    line-height: 20px;
   }
 
   p{
@@ -242,8 +270,17 @@
     color: #0D0D0D;
   }
 
-  #img-med, #img-med2 {
+  img.img-med {
     height: 300px;
+    /* object-fit:cover; */
+    width: auto;
+    border: 2px solid #A9C6D9;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  img.img-sm {
+    height: 100px;
     /* object-fit:cover; */
     width: auto;
     border: 2px solid #A9C6D9;
@@ -261,6 +298,21 @@
     padding: 1px;
   }
 
+  .noBorder {
+    border: none;
+  }
+
+  .radius {
+    border-radius: 6px;
+  }
+
+  label {
+    padding-left: 10px;
+  }
+
+  .button_submit {
+    padding: 20px 10px;
+  }
 
   /* a.active{
     background-color: #919191 ;
@@ -288,7 +340,7 @@
     .grid-nav {
       display:grid;
       height: 50px;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       /* grid-column: 1 /span 5; */
       /* grid-row-start: 1; */
       text-align: center;
@@ -360,7 +412,7 @@
   
     .grid_footer {
       grid-row: 6;
-      grid-column: 1 / span 2;
+      grid-column: 1 / -1;
     }
 
     a:hover {
