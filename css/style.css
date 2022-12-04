@@ -15,7 +15,7 @@
     }
     .skip a{
       background: white;
-      left: 0;
+      /* left: 0; */
       padding: 6px;
       -webkit-transition: top 1s ease-out;
       transition: top 1s ease-out;
@@ -23,7 +23,7 @@
       /*Your code here - position relative to the parent */
       position:absolute; /* relative = relative to its normal position, absolute = relative to its parent
       /*Your code here - place 500px left and 40px higher */;
-      left: 500px;
+      left: -500px;
       top: -100px;
     }
     
