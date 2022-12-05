@@ -94,6 +94,7 @@
     min-width: 80vw;
     display: inline-flex;
     margin: 35px;
+    padding-top: 100px;
     flex-direction: column;
     justify-content: space-between;
     align-items:flex-start;
@@ -300,30 +301,31 @@
     font-family:'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #FFFFFF;
     background-image: url('../images/electric-vehicle-tablet.jpg');
-    background-size: cover;
+    background-size: 1500px;
     background-attachment: fixed;
     background-color: #252D38; /* #C0CCE3  #DFE0E2 */
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .grid-nav {
     display:grid;
-    height: 50px;
+    height: 10px;
     grid-template-columns: repeat(6, 1fr);
     /* grid-column: 1 /span 5; */
     /* grid-row-start: 1; */
     text-align: center;
     justify-items: center;
     align-items: center;
+    z-index: 1;
   }
     
   .container {
     /* height: 1000px; */
-    width: 100vw;
+    padding-top: 150px;
+    width: 600px;
     display: grid;
     grid-template-columns: 5px 1fr 5px;
     grid-template-rows: repeat(5, fr) 100px;
-
   }
   
 
@@ -458,8 +460,10 @@
     .container {
       display: grid;
       height: 800px;
+      width: 100vw;
       grid-template-columns: 50px repeat(4, 1fr);
       grid-template-rows: repeat(5, 1fr);
+      padding-top: 50px;
     }
   
   
@@ -475,6 +479,15 @@
       
     }
   
+    .gallery_container {
+      min-width: 80vw;
+      display: inline-flex;
+      margin: 35px;
+      padding-top: 50px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items:flex-start;
+    }
     .button {
       /* background-color: #252D38;
       border: solid #252D38;
